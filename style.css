@@ -1,0 +1,215 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+.row_posterlong {
+  max-height: 800px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px; /* Remove top padding */
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-avator {
+  padding-top: 0;
+  position: relative;
+  margin-top: 0;
+  outline: none;
+  width: 30px;
+  object-fit: contain;
+  margin-top: 0; /* Ensure no margin on top */
+}
+
+.nav-logo {
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  object-fit: relative;
+}
+
+/* Banner styles */
+.banner {
+  position: relative;
+  height: 550px;
+  color: #fff;
+  object-fit: contain;
+  background-image: url("../images/netflix-background.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner_contents {
+  position: relative;
+  top: 22.5%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  color: white;
+}
+
+.banner_title {
+  font-size: 3rem;
+  top: 50px;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.banner_description {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.line_one {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.line_two {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Banner buttons container at the top-right */
+.banner_buttons {
+  position: absolute;
+  top: 25px;
+  right: 20px; /* Keep this for right alignment */
+  display: flex;
+  gap: 10px;
+}
+
+/* General banner button styling */
+.banner_button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(
+    34,
+    34,
+    34,
+    0.67
+  ); /* Semi-transparent dark background */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Specific styling for the Sign Up button */
+.signup_button {
+  background-color: #e50914; /* Red background for Sign Up button */
+}
+
+.signup_button:hover {
+  background-color: #f40612; /* Slightly lighter red on hover */
+  color: white;
+}
+
+/* Hover effect for general buttons */
+.banner_button:hover {
+  background-color: #e6e6e6; /* Lighter background on hover */
+  color: #000;
+}
+
+/* Input field */
+.input {
+  margin-top: 20px;
+}
+
+.input input {
+  padding: 10px;
+  border: 2px solid white; /* White border around the input */
+  border-radius: 15px;
+  background-color: rgba(11, 11, 11, 0.348);
+  outline: none;
+  width: 350px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.input button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #e50914; /* Red background for the "Get Started" button */
+  color: white;
+  height: 47px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.input button:hover {
+  background-color: #f40612; /* Lighter red on hover */
+}
+
+/* Banner fade effect */
+.banner_fade {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Rows and posters */
+.row {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.row h2 {
+  font-size: 1.5rem;
+}
+
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px 0;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  width: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.footer {
+  background-color: transparent;
+  color: ghostwhite;
+  text-align: center;
+}
+
+
